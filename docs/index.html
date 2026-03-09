@@ -1,1 +1,128 @@
-<!doctype html><html lang='zh-CN'><meta charset='utf-8' /><title>京沪关键指标对比仪表盘</title><body><h1>京沪关键指标对比仪表盘</h1><p>暂无可展示数据，请等待首次成功采集后自动更新。</p></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>京沪关键指标对比仪表盘</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --ink: #1a2a3a;
+      --muted: #65717e;
+      --accent-a: #0055a6;
+      --accent-b: #d63c2f;
+      --ring: #d8e4f4;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Noto Sans SC", "PingFang SC", sans-serif; background: radial-gradient(circle at top right, #eaf2ff, var(--bg)); color: var(--ink); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 16px 36px; }
+    h1 { margin: 0 0 8px; }
+    .meta { color: var(--muted); margin-bottom: 20px; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 14px; box-shadow: 0 8px 20px rgba(35,55,80,0.05); }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .card ul { margin: 0; padding-left: 18px; }
+    .panel { margin-top: 18px; padding: 14px; background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid #eef2f7; padding: 8px; text-align: left; }
+    th { background: #f7fafd; }
+    canvas { width: 100% !important; height: 420px !important; }
+    a { color: var(--accent-a); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>京沪关键指标对比仪表盘</h1>
+    <div class="meta">按日自动抓取上海市统计局与北京市统计局网站公开信息。更新时间: 2026-03-09</div>
+
+    <div class="grid">
+            <div class="card">
+              <h3>固定资产投资</h3>
+              <ul><li>上海: -22 nan</li><li>北京: 暂无</li></ul>
+            </div>
+            
+            <div class="card">
+              <h3>地区生产总值(GDP)</h3>
+              <ul><li>上海: 1 亿元</li><li>北京: 暂无</li></ul>
+            </div>
+            
+            <div class="card">
+              <h3>居民消费价格指数(CPI)</h3>
+              <ul><li>上海: 202 %</li><li>北京: 1 nan</li></ul>
+            </div>
+            
+            <div class="card">
+              <h3>社会消费品零售总额</h3>
+              <ul><li>上海: 8 亿元</li><li>北京: 暂无</li></ul>
+            </div>
+            
+            <div class="card">
+              <h3>规模以上工业增加值</h3>
+              <ul><li>上海: 2.20 亿元</li><li>北京: 暂无</li></ul>
+            </div>
+            
+            <div class="card">
+              <h3>进出口总额</h3>
+              <ul><li>上海: 3.90 亿元</li><li>北京: 暂无</li></ul>
+            </div>
+            </div>
+
+    <div class="panel">
+      <h2>趋势对比</h2>
+      <canvas id="trend"></canvas>
+    </div>
+
+    <div class="panel">
+      <h2>最新采集明细</h2>
+      <table>
+        <thead>
+          <tr><th>日期</th><th>城市</th><th>指标</th><th>数值</th><th>单位</th><th>来源</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-03-09</td><td>上海</td><td>固定资产投资</td><td>-22</td><td>nan</td><td><a href='https://tjj.sh.gov.cn/' target='_blank'>来源</a></td></tr>
+<tr><td>2026-03-09</td><td>上海</td><td>地区生产总值(GDP)</td><td>1</td><td>亿元</td><td><a href='https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html' target='_blank'>来源</a></td></tr>
+<tr><td>2026-03-09</td><td>上海</td><td>居民消费价格指数(CPI)</td><td>202</td><td>%</td><td><a href='https://tjj.sh.gov.cn/' target='_blank'>来源</a></td></tr>
+<tr><td>2026-03-09</td><td>北京</td><td>居民消费价格指数(CPI)</td><td>1</td><td>nan</td><td><a href='https://tjj.beijing.gov.cn/' target='_blank'>来源</a></td></tr>
+<tr><td>2026-03-09</td><td>上海</td><td>社会消费品零售总额</td><td>8</td><td>亿元</td><td><a href='https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html' target='_blank'>来源</a></td></tr>
+<tr><td>2026-03-09</td><td>上海</td><td>规模以上工业增加值</td><td>2.20</td><td>亿元</td><td><a href='https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html' target='_blank'>来源</a></td></tr>
+<tr><td>2026-03-09</td><td>上海</td><td>进出口总额</td><td>3.90</td><td>亿元</td><td><a href='https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html' target='_blank'>来源</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const labels = ["2026-03-09"];
+    const trendPayload = {"固定资产投资": {"上海": [-22.0], "北京": []}, "地区生产总值(GDP)": {"上海": [1.0], "北京": []}, "居民消费价格指数(CPI)": {"上海": [202.0], "北京": [1.0]}, "社会消费品零售总额": {"上海": [8.0], "北京": []}, "规模以上工业增加值": {"上海": [2.2], "北京": []}, "进出口总额": {"上海": [3.9], "北京": []}};
+    const indicatorOrder = ["固定资产投资", "地区生产总值(GDP)", "居民消费价格指数(CPI)", "社会消费品零售总额", "规模以上工业增加值", "进出口总额"];
+    const cityColors = {"上海": "#0055a6", "北京": "#d63c2f"};
+
+    function datasetsFor(indicator) {
+      const cityMap = trendPayload[indicator] || {};
+      return Object.keys(cityMap).map(city => ({
+        label: `${indicator} - ${city}`,
+        data: cityMap[city],
+        borderColor: cityColors[city] || '#333',
+        backgroundColor: cityColors[city] || '#333',
+        tension: 0.2,
+        borderWidth: 2
+      }));
+    }
+
+    const allDatasets = indicatorOrder.flatMap(datasetsFor);
+    const ctx = document.getElementById('trend').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: { labels, datasets: allDatasets },
+      options: {
+        responsive: true,
+        interaction: { mode: 'nearest', axis: 'x', intersect: false },
+        plugins: { legend: { position: 'bottom' } },
+        scales: { y: { beginAtZero: false } }
+      }
+    });
+  </script>
+</body>
+</html>
