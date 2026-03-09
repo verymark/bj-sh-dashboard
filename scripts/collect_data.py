@@ -99,7 +99,7 @@ def detect_unit(text: str) -> str:
 def extract_from_tables(html: str, indicator_keywords: Dict[str, List[str]]) -> Dict[str, Tuple[float, str]]:
     results: Dict[str, Tuple[float, str]] = {}
     try:
-        tables = pd.read_html(StringIO(html))
+        tables = pd.read_html(StringIO(html), flavor="lxml")
     except ValueError:
         return results
 
