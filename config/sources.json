@@ -1,0 +1,33 @@
+{
+  "cities": [
+    {
+      "name": "上海",
+      "code": "shanghai",
+      "base_url": "https://tjj.sh.gov.cn",
+      "seed_urls": [
+        "https://tjj.sh.gov.cn/",
+        "https://tjj.sh.gov.cn/tjsj/",
+        "https://tjj.sh.gov.cn/tjgb/"
+      ]
+    },
+    {
+      "name": "北京",
+      "code": "beijing",
+      "base_url": "https://tjj.beijing.gov.cn",
+      "seed_urls": [
+        "https://tjj.beijing.gov.cn/",
+        "https://tjj.beijing.gov.cn/tjsj/",
+        "https://tjj.beijing.gov.cn/tjgb/"
+      ]
+    }
+  ],
+  "indicator_keywords": {
+    "地区生产总值(GDP)": ["地区生产总值", "GDP", "生产总值"],
+    "规模以上工业增加值": ["规模以上工业增加值", "工业增加值"],
+    "社会消费品零售总额": ["社会消费品零售总额", "社零"],
+    "固定资产投资": ["固定资产投资"],
+    "居民消费价格指数(CPI)": ["居民消费价格", "CPI"],
+    "进出口总额": ["进出口总额", "货物进出口"]
+  },
+  "link_keywords": ["统计月报", "统计公报", "主要经济指标", "经济运行", "统计数据", "国民经济"]
+}
