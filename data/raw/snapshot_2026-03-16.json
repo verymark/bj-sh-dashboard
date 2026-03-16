@@ -1,0 +1,65 @@
+[
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "固定资产投资",
+    "value": -22.0,
+    "unit": "",
+    "source_url": "https://tjj.sh.gov.cn/",
+    "capture_date": "2026-03-16"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "居民消费价格指数(CPI)",
+    "value": 202.0,
+    "unit": "%",
+    "source_url": "https://tjj.sh.gov.cn/",
+    "capture_date": "2026-03-16"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "地区生产总值(GDP)",
+    "value": 1.0,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html",
+    "capture_date": "2026-03-16"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "规模以上工业增加值",
+    "value": 2.2,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html",
+    "capture_date": "2026-03-16"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "社会消费品零售总额",
+    "value": 8.0,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html",
+    "capture_date": "2026-03-16"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "进出口总额",
+    "value": 3.9,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html",
+    "capture_date": "2026-03-16"
+  },
+  {
+    "city": "北京",
+    "city_code": "beijing",
+    "indicator": "居民消费价格指数(CPI)",
+    "value": 2.0,
+    "unit": "",
+    "source_url": "https://tjj.beijing.gov.cn/",
+    "capture_date": "2026-03-16"
+  }
+]
