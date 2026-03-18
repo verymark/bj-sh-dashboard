@@ -65,3 +65,13 @@ city,city_code,indicator,value,unit,source_url,capture_date
 上海,shanghai,社会消费品零售总额,8.0,亿元,https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html,2026-03-17
 上海,shanghai,规模以上工业增加值,2.2,亿元,https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html,2026-03-17
 上海,shanghai,进出口总额,3.9,亿元,https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html,2026-03-17
+北京,beijing,固定资产投资,2.0,,https://tjj.beijing.gov.cn/,2026-03-18
+北京,beijing,居民消费价格指数(CPI),2.0,,https://tjj.beijing.gov.cn/,2026-03-18
+北京,beijing,社会消费品零售总额,2.0,亿元,https://tjj.beijing.gov.cn/bwtt_31461/202603/t20260317_4558620.html,2026-03-18
+北京,beijing,规模以上工业增加值,6.7,%,https://tjj.beijing.gov.cn/bwtt_31461/202603/t20260317_4558620.html,2026-03-18
+上海,shanghai,固定资产投资,2.0,%,https://tjj.sh.gov.cn/,2026-03-18
+上海,shanghai,地区生产总值(GDP),1.0,亿元,https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html,2026-03-18
+上海,shanghai,居民消费价格指数(CPI),-10.0,%,https://tjj.sh.gov.cn/,2026-03-18
+上海,shanghai,社会消费品零售总额,-2.0,%,https://tjj.sh.gov.cn/,2026-03-18
+上海,shanghai,规模以上工业增加值,2.2,亿元,https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html,2026-03-18
+上海,shanghai,进出口总额,3.9,亿元,https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html,2026-03-18
