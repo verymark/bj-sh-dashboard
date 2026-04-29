@@ -508,3 +508,10 @@ city,city_code,indicator,value,unit,source_url,capture_date
 上海,shanghai,社会消费品零售总额,-3.0,%,https://tjj.sh.gov.cn/,2026-04-28
 上海,shanghai,规模以上工业增加值,5.0,亿元,http://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html,2026-04-28
 上海,shanghai,进出口总额,-22.0,%,https://tjj.sh.gov.cn/,2026-04-28
+北京,beijing,居民消费价格指数(CPI),-20.0,,https://tjj.beijing.gov.cn/,2026-04-29
+上海,shanghai,固定资产投资,-3.0,%,https://tjj.sh.gov.cn/,2026-04-29
+上海,shanghai,地区生产总值(GDP),9.0,亿元,http://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html,2026-04-29
+上海,shanghai,居民消费价格指数(CPI),-23.0,,https://tjj.sh.gov.cn/,2026-04-29
+上海,shanghai,社会消费品零售总额,-3.0,%,https://tjj.sh.gov.cn/,2026-04-29
+上海,shanghai,规模以上工业增加值,5.0,亿元,http://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html,2026-04-29
+上海,shanghai,进出口总额,-22.0,%,https://tjj.sh.gov.cn/,2026-04-29
