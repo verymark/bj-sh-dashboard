@@ -1,0 +1,101 @@
+[
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "社会消费品零售总额",
+    "value": -6.0,
+    "unit": "%",
+    "source_url": "https://tjj.sh.gov.cn/",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "固定资产投资",
+    "value": -6.0,
+    "unit": "%",
+    "source_url": "https://tjj.sh.gov.cn/",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "居民消费价格指数(CPI)",
+    "value": -23.0,
+    "unit": "",
+    "source_url": "https://tjj.sh.gov.cn/",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "地区生产总值(GDP)",
+    "value": 9.0,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "规模以上工业增加值",
+    "value": 5.0,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "上海",
+    "city_code": "shanghai",
+    "indicator": "进出口总额",
+    "value": 2.1,
+    "unit": "亿元",
+    "source_url": "https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "北京",
+    "city_code": "beijing",
+    "indicator": "固定资产投资",
+    "value": -20.0,
+    "unit": "",
+    "source_url": "https://tjj.beijing.gov.cn/",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "北京",
+    "city_code": "beijing",
+    "indicator": "地区生产总值(GDP)",
+    "value": 5.4,
+    "unit": "亿元",
+    "source_url": "https://tjj.beijing.gov.cn/bwtt_31461/202607/t20260720_4772185.html",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "北京",
+    "city_code": "beijing",
+    "indicator": "规模以上工业增加值",
+    "value": 3.4,
+    "unit": "%",
+    "source_url": "https://tjj.beijing.gov.cn/bwtt_31461/202607/t20260720_4772185.html",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "北京",
+    "city_code": "beijing",
+    "indicator": "社会消费品零售总额",
+    "value": 2.2,
+    "unit": "亿元",
+    "source_url": "https://tjj.beijing.gov.cn/bwtt_31461/202607/t20260720_4772185.html",
+    "capture_date": "2026-07-23"
+  },
+  {
+    "city": "北京",
+    "city_code": "beijing",
+    "indicator": "居民消费价格指数(CPI)",
+    "value": 0.0,
+    "unit": "%",
+    "source_url": "https://tjj.beijing.gov.cn/bwtt_31461/202607/t20260720_4772185.html",
+    "capture_date": "2026-07-23"
+  }
+]
