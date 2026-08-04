@@ -17,9 +17,7 @@ from bs4 import BeautifulSoup
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT = ROOT / "docs" / "mof-tongjishuju.xml"
 INDEX_URL = "https://gks.mof.gov.cn/tongjishuju/"
-FEED_URL = "https://verymark.github.io/bj-sh-dashboard/mof-tongjishuju.xml"
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 ATOM_NS = "http://www.w3.org/2005/Atom"
 
@@ -147,8 +145,8 @@ def build_feed(items: list[FeedItem], feed_url: str) -> bytes:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--feed-url", default=FEED_URL)
+    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--feed-url", required=True)
     parser.add_argument("--max-items", type=int, default=50)
     args = parser.parse_args()
 

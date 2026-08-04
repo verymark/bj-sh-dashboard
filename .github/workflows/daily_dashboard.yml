@@ -7,10 +7,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   collect-and-publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,7 +35,13 @@ jobs:
         run: python scripts/build_dashboard.py
 
       - name: Build Ministry of Finance RSS
-        run: python scripts/build_mof_rss.py
+        env:
+          PRIVATE_FEED_PATH: ${{ secrets.MOF_RSS_PATH }}
+        run: |
+          test -n "$PRIVATE_FEED_PATH"
+          python scripts/build_mof_rss.py \
+            --output "docs/$PRIVATE_FEED_PATH" \
+            --feed-url "https://verymark.github.io/bj-sh-dashboard/$PRIVATE_FEED_PATH"
 
       - name: Commit updates
         run: |
@@ -43,3 +54,15 @@ jobs:
           fi
           git commit -m "chore: update daily statistics feeds"
           git push
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload private Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
