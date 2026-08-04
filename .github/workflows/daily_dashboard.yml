@@ -29,6 +29,9 @@ jobs:
       - name: Build dashboard
         run: python scripts/build_dashboard.py
 
+      - name: Build Ministry of Finance RSS
+        run: python scripts/build_mof_rss.py
+
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
@@ -38,5 +41,5 @@ jobs:
             echo "No changes detected"
             exit 0
           fi
-          git commit -m "chore: update daily Beijing-Shanghai stats dashboard"
+          git commit -m "chore: update daily statistics feeds"
           git push

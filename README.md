@@ -8,6 +8,7 @@
 - 自动识别并提取关键指标（GDP、工业、消费、投资、CPI、进出口）
 - 生成历史数据 `data/history.csv`
 - 生成仪表盘页面 `docs/index.html`
+- 生成财政部国库司统计数据 RSS `docs/mof-tongjishuju.xml`
 - 通过 GitHub Actions 每日自动更新并提交
 
 ## 项目结构
@@ -15,6 +16,7 @@
 - `config/sources.json`: 数据源与指标关键词配置
 - `scripts/collect_data.py`: 采集与清洗脚本
 - `scripts/build_dashboard.py`: 仪表盘 HTML 生成脚本
+- `scripts/build_mof_rss.py`: 财政部统计数据 RSS 生成脚本
 - `.github/workflows/daily_dashboard.yml`: 每日自动任务
 - `data/`: 采集结果与历史数据
 - `docs/index.html`: GitHub 可直接展示的仪表盘
@@ -27,7 +29,18 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/collect_data.py
 python scripts/build_dashboard.py
+python scripts/build_mof_rss.py
 ```
+
+## RSS 订阅
+
+在 Inoreader 中添加以下订阅地址：
+
+```text
+https://verymark.github.io/bj-sh-dashboard/mof-tongjishuju.xml
+```
+
+该 Feed 收录财政部国库司“统计数据”栏目中的文章与 PDF，并由 GitHub Actions 每日检查更新。
 
 ## GitHub 展示
 
